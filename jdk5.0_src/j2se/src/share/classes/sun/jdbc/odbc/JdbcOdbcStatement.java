@@ -823,7 +823,7 @@ public class JdbcOdbcStatement
                        fetchSize = rows;
                 }
                 else { // bug 4495457
-                       throw new SQLException("Invalid Fetch Size");
+                       throw new SQLException("Invalid Fetch Size"+this.getMaxRows());
                 }
 	}
 
